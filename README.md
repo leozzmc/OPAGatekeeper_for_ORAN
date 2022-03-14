@@ -6,3 +6,6 @@
 - Playground:
 
 https://play.openpolicyagent.org/
+
+### Practice-1 Output
+![image](https://user-images.githubusercontent.com/30616512/158208889-564219b4-d6a0-4e7f-bf35-27ce27789af4.png)
