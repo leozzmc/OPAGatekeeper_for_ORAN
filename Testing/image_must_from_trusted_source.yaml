@@ -7,6 +7,5 @@ spec:
     kinds:
       - apiGroups: [""]
         kinds: ["Pod"]  
-    excludedNamespaces: ["kube-system"]
-  # parameters:
-  #   labels: ["gatekeeper"]
+    excludedNamespaces: ["kube-system","weave","gatekeeper-system","ricplt","ricinfra","default"]
+
