@@ -169,7 +169,8 @@ EOF
 mkdir -p /etc/systemd/system/docker.service.d
 systemctl enable docker.service
 systemctl daemon-reload
-systemctl restart docker
+#systemctl restart docker
+systemctl start docker
 
 if [ -z ${CNIVERSION} ]; then
   apt-get install -y $APTOPTS kubernetes-cni
