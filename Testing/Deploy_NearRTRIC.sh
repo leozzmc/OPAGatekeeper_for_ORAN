@@ -21,7 +21,7 @@ sleep 5
 
 cd /
 mv OPAGatekeeper_for_ORAN/ root/
-cd /root/OPAGatekeepeer_for_ORAN
+cd /root/OPAGatekeepeer_for_ORAN/Testing
 
 sudo chmod +x ./k8s-1node-cloud-init-k_1_21-h_3_8-d_cur.sh
 mv -f ./k8s-1node-cloud-init-k_1_21-h_3_8-d_cur.sh  /root/dep/tools/k8s/bin/
