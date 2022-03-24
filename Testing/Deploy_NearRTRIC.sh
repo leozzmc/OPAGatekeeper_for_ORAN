@@ -9,7 +9,7 @@
 OPAROOTDIR=/root
 
 sudo apt-get update
-sudo apt-get install -y vim git curl net-tools
+sudo apt-get install -y vim git curl net-tools lsb-core
 
 cd $OPAROOTDIR
 git clone https://gerrit.o-ran-sc.org/r/it/dep
