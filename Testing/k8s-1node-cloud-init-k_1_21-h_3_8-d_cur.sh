@@ -148,11 +148,14 @@ for PKG in kubeadm docker.io; do
 done
 apt-get -y autoremove
 
-if [ -z ${DOCKERVERSION} ]; then
-  apt-get install -y $APTOPTS docker.io
-else
-  apt-get install -y $APTOPTS docker.io=${DOCKERVERSION}
-fi
+# if [ -z ${DOCKERVERSION} ]; then
+#   apt-get install -y $APTOPTS docker.io
+# else
+#   apt-get install -y $APTOPTS docker.io=${DOCKERVERSION}
+# fi
+
+apt-get install -y docker.io
+
 cat > /etc/docker/daemon.json <<EOF
 {
   "exec-opts": ["native.cgroupdriver=systemd"],
