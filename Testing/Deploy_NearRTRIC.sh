@@ -19,7 +19,7 @@ cd dep && git submodule update --init --recursive --remote
 echo "Setting the Kubernetes Node ..........."
 sleep 5
 
-cd $OPAROOTDIR/OPAGatekeeper_for_ORAN/
+cd $OPAROOTDIR/OPAGatekeeper_for_ORAN-main/
 
 sudo chmod +x ./k8s-1node-cloud-init-k_1_21-h_3_8-d_cur.sh
 mv -f ./k8s-1node-cloud-init-k_1_21-h_3_8-d_cur.sh  /root/dep/tools/k8s/bin/
